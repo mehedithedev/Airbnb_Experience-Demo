@@ -7,6 +7,7 @@ import Planets from './Components/Planets'
 import Maps from './Components/Map'
 import UseState from "./State/UseState.jsx";
 import InputState from "./State/InputState.jsx";
+import Counter from "./State/Counter.jsx";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Planets/>
       <UseState/>
       <InputState/>
+      <Counter/>
     </div>
   </>
   )

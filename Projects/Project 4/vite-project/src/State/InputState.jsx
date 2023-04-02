@@ -14,7 +14,10 @@ function InputState() {
         setTextColor('blue' ? 'red' : 'orange')
     }
 
-    const [backColor, setBackColor] = useState()
+    const [backColor, setBackColor] = useState('gray')
+    const toggleBackColor= ()=>{
+        setBackColor('gray' ? 'green' : 'orange')
+    }
 
     return(
         <div>
@@ -24,8 +27,9 @@ function InputState() {
             {showText && <h2 style={{color:textColor}}>Show or hide this piece of text</h2>}
             <button onClick={toggleText}>Show/Hide</button>
             <button onClick={toggleTextColor}>Change the color</button>
-            <h3>The background of this text is going to be chagned </h3>
+            <h3>The background of this text is going to be changed </h3>
             <button>Click the button to change the background</button>
+            <div></div>
         </div>
     )
 }
