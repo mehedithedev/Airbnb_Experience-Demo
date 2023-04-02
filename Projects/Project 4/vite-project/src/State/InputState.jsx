@@ -14,6 +14,8 @@ function InputState() {
         setTextColor('blue' ? 'red' : 'orange')
     }
 
+    const [backColor, setBackColor] = useState()
+
     return(
         <div>
             <h1>Input Text </h1>
@@ -22,6 +24,8 @@ function InputState() {
             {showText && <h2 style={{color:textColor}}>Show or hide this piece of text</h2>}
             <button onClick={toggleText}>Show/Hide</button>
             <button onClick={toggleTextColor}>Change the color</button>
+            <h3>The background of this text is going to be chagned </h3>
+            <button>Click the button to change the background</button>
         </div>
     )
 }
